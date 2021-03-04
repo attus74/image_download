@@ -1,0 +1,9 @@
+## Action Links
+---
+
+image_import.import:
+  route_name: image_import.import
+  title: 'Import Image'
+  weight: 19
+  appears_on:
+    - entity.media.collection

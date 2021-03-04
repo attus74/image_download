@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.media.source
+    - media.type.image
+  module:
+    - link
+id: media.image.source
+field_name: source
+entity_type: media
+bundle: image
+label: Source
+description: 'External Source of Media'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

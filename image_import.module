@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Image Import
+ *
+ * @author Attila Németh
+ * 04.03.2021
+ */
+
+/**
+ * Implements hook_locale_translation_projects_alter()
+ */
+function image_import_locale_translation_projects_alter(&$projects)
+{
+  $projects['image_import']['info']['interface translation project'] = 'image_import';
+  $projects['image_import']['info']['interface translation server pattern'] =
+      drupal_get_path('module', 'image_import') . '/translations/image_import.%language.po';
+}

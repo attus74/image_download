@@ -1,0 +1,4 @@
+services:
+  plugin.manager.image_import_source:
+    class: Drupal\image_import\ImageImportSourceManager
+    parent: default_plugin_manager

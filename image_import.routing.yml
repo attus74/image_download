@@ -1,0 +1,12 @@
+## Routing
+---
+
+image_import.import:
+  path: media/image/import
+  defaults:
+    _form: Drupal\image_import\Form\Import
+    _title: Image Import
+  requirements:
+    _permission: create media
+  options:
+    _admin_route: TRUE

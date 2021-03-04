@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Image Import\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Download and import images to Media"
+msgstr "Bilder herunterladen und in Media importieren"
+
+msgid "Source"
+msgstr "Bildnachweis"
+
+msgid "Import Image"
+msgstr "Bild importieren"
+
+msgid "Image"
+msgstr "Bild"
+
+msgid "Applicable Plugins: @plugins"
+msgstr "Verfügbare Plugins: @plugins"
+
+msgid "This URL is not supported by any plugin"
+msgstr "Kein Plugin kann diese URL verwenden"
