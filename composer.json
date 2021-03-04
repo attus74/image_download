@@ -1,0 +1,19 @@
+{
+  "name": "attus/image_import",
+  "description": "Download and import images to Media",
+  "type": "attus-module",
+  "keywords": ["Drupal", "Media", "Image"],
+  "homepage": "https://github.com/attus74/image_download",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Attila Németh",
+      "email": "attus@germanicus.hu",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "drupal/core": "^8.9 || ^9.0",
+    "attus/installer": "^1.0"
+  }
+}
