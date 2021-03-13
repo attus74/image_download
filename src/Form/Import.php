@@ -37,6 +37,26 @@ class Import extends FormBase {
         '@plugins' => implode(', ', $labels),
       ]),
     ];
+    $form['fullsize'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Actual size'),
+      '#description' => t('Uncheck if you want to use images in a restricted size'),
+      '#default_value' => TRUE,
+    ];
+    $form['size'] = [
+      '#type' => 'number',
+      '#title' => t('Size'),
+      '#size' => 12,
+      '#field_suffix' => t('Pixel'),
+      '#description' => t('The length of the longer size of the image.'),
+      '#min' => 48,
+      '#max' => 9192,
+      '#states' => [
+        'invisible' => [
+          ':input[name="fullsize"]' => array('checked' => TRUE),
+        ],
+      ],
+    ];
     $form['submit'] = [
       '#type' => 'submit',
       '#value' => t('Import Image'),
@@ -70,10 +90,17 @@ class Import extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $definitions = $this->_getPluginDefinitions();
+    if ($form_state->getValue('fullsize') == 1) {
+      $size = -1;
+    }
+    else {
+      $size = $form_state->getValue('size');
+    }
     foreach($definitions as $definition) {
       $plugin = \Drupal::service('plugin.manager.image_import_source')
           ->createInstance($definition['id'], [
             'url' => $form_state->getValue('url'),
+            'size' => $size,
           ]);
       if ($plugin->isApplicable()) {
         $media = $plugin->createMedia();

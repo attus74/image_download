@@ -22,4 +22,10 @@ msgid "Applicable Plugins: @plugins"
 msgstr "Elérhető pluginok: @plugins"
 
 msgid "This URL is not supported by any plugin"
-msgstr "Egyetlen URL sem támogatja ezt az URL-t"
+msgstr "Egyetlen plugin sem támogatja ezt az URL-t"
+
+msgid "Actual size"
+msgstr "Eredeti méret"
+
+msgid "Uncheck if you want to use images in a restricted size"
+msgstr "A pipa eltávolításával kisebb méret is megadható"

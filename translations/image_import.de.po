@@ -23,3 +23,9 @@ msgstr "Verfügbare Plugins: @plugins"
 
 msgid "This URL is not supported by any plugin"
 msgstr "Kein Plugin kann diese URL verwenden"
+
+msgid "Actual size"
+msgstr "Originalgröße"
+
+msgid "Uncheck if you want to use images in a restricted size"
+msgstr "Haken entfernen, um das Bild verkleinert herunterzuladen"
